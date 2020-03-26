@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Cousine&display=swap');
+html{
+  font-family: 'Cousine', Arial, Helvetica, sans-serif;
+  color: #000000;
+}
+ul{
+    list-style: none;
+}
+.site-header{
+    list-style: none;
+    position: relative;
+    display: block;
+}
