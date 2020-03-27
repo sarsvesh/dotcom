@@ -57,7 +57,7 @@ ul a:hover{
   padding-top: 5px;
   padding-bottom: 5px;
   justify-content: flex-start;
-  width: 60%;
+  width: 65%;
   color: white;
 }
 .side-text{
@@ -69,4 +69,5 @@ ul a:hover{
 .side-text a{
   color: black;
   text-decoration: underline;
+
 }
