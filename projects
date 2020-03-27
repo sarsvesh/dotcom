@@ -10,7 +10,14 @@
     </head>
     <body>
         <div id = "app">
-            
+            <div id="list">
+             <ul class="project-list">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+             </ul>
+            </div>
         </div>
     </body>
 </html>
