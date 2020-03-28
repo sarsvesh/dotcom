@@ -8,6 +8,8 @@
 html{
   font-family: 'Cousine', Arial, Helvetica, sans-serif;
 }
+/* ---------HOMEPAGE------------ */
+
 ul a{
   color: white;
 }
@@ -47,7 +49,7 @@ ul a:hover{
   display: flex;
 }
 .main-text{
-  background-color:rgb(0, 81, 255);
+  background-color:black;
   font-size: 30px;
   padding-left: 10px;
   padding-right: 10px;
@@ -68,7 +70,149 @@ ul a:hover{
   text-decoration: underline;
 
 }
+/* -----------projects page (header & nav)-------------- */
 
+.projects-control{
+  display: block;
+  position: relative;
+  padding: 6px;
+}
+.projects-control-header{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: hidden;
+  max-width: 100%;
+  align-items: center;
+}
+.projects-control-input{
+  display: block;
+  flex-grow: 1;
+  flex-shrink: 1;
+  position: relative;
+  margin: 6px;
+  min-width: 150px;
+}
+.projects-control-input input{
+  background-color: white;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  display: inline-block;
+  width: 98%;
+  padding-top: 0.5em;
+  padding-right: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 0.5em;
+  font-family: 'Cousine', Arial, Helvetica, sans-serif;
+  font-size: 17px;
+}
+input:focus{
+  outline: 0;
+}
+.tag{
+    padding: 7px;
+    flex-shrink: 0;
+    display: inline-block;
+    background: #fff;
+    color: black;
+    border: 2px solid black;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 6px;
+}
+.tag:hover{
+  background-color: black;
+  color: white;
+}
+/*
+.projects-control-expand{
+    padding: 7px;
+    background-color:black;
+    border: 2px solid black;
+    color: #fff;
+    cursor: pointer;
+    margin: 6px;
+    ;
+}
+*/
+/* -----------projects page (project list)-------------- */
+.list{
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+.projects-table{
+  color: black;
+  display: block;
+  overflow-y: scroll;
+  padding-left: 12px;
+  padding-bottom: 12px;
+  padding-right: 6px;
+  padding-top: 0px;
+}
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+  display: table;
+  border-color: gray;
+}
+.projects-table__table {
+  width: 100%;
+}
+
+thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+tr{
+  display: table-row;
+}
+.projects-table-data, .projects-table__header {
+  padding-left: .5rem;
+  padding-right: .5rem;
+  max-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.projects-table__header {
+  font-weight: 700;
+  padding-bottom: .5rem;
+  cursor: pointer;
+}
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+}
+td {
+  display: table-cell;
+  vertical-align: inherit;
+}
+.projects-table-row {
+  width: 100%;
+  border-top: 1px solid #e6e6e6;
+  margin: 0;
+  cursor: pointer;
+}
+.projects-table-year {
+  width: 12.5%;
+  padding-left: 0;
+}
+.projects-table-data, .projects-table__header {
+  padding-left: .5rem;
+  padding-right: .5rem;
+  max-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.projects-table-data {
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+/* MOBILE SCALING */
 @media screen and (min-width:375px) and (max-width:600px){
   /* for screens that are at least 375 pixels wide */
 

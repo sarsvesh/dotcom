@@ -10,6 +10,7 @@
     </head>
     <body>
         <div id = "app">
+            <!--header-->
             <header class="site-header">
                 <nav role="navigation" class="navigation-bar">
                   <ul class="site-header-list">
@@ -23,13 +24,79 @@
                         <a href="">Contact</a>
                       </li>
                   </ul>
+                </nav>
+            </header>
+            <!--project search bar-->
+            <nav class="projects-control">
+                <div class="projects-control-header">
+                    <div class="projects-control-input">
+                        <input type="text" placeholder="Type to Filter Results">
+                        <div class="projects-control-empty" style="display: none;">×</div>
+                    </div>
+                    <a href="#" class="tag projects-control-tag projects-control-tag-first">Editorial</a>
+                    <a href="#" class="tag projects-control-tag">Photography</a>
+                    <a href="#" class="tag projects-control-tag">Identities</a>
+                    <a href="#" class="tag projects-control-tag">Infographics</a>
+                   <!-- <div class="projects-control-expand">More</div> -->
+                </div>
+                <!---->
+            </nav>
+            
+            
+            <!--project list(left)-->
             <div id="list">
-             <ul class="project-list">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-             </ul>
+                <section class="projects-table" id="projects-table">
+                    <table class="projects-table__table">
+                        <thead>
+                            <tr>
+                                <td class="projects-table__header projects-table__year">Year</td>
+                                <td class="projects-table__header projects-table__title">Project</td>
+                                <td class="projects-table__header projects-table__client">Client</td>
+                                <td class="projects-table__header projects-table__location">Client</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="projects-table-row">
+                                <td class="projects-table-data projects-table-year"><a href="">2020</a></td>
+                                <td class="projects-table-data projects-table-project"><a href="">Chef Records Media Kit</a></td>
+                                <td class="projects-table-data projects-table-client"><a href = "">Chef Records</a></td>
+                                <td class="projects-table-data projects-table-location"><a href ="">Singapore</a></td> 
+                            </tr>
+                            <tr class="projects-table-row" >
+                                <td class="projects-table-data projects-table-year"><a href="">2020</a></td>
+                                <td class="projects-table-data projects-table-project"><a href="">P.C Launch </a></td>
+                                <td class="projects-table-data projects-table-client"><a href = "">Preety Chill</a></td>
+                                <td class="projects-table-data projects-table-location"><a href ="">Singapore</a></td> 
+                            </tr>
+                            <tr class="projects-table-row">
+                                <td class="projects-table-data projects-table-year"><a href="">2020</a></td>
+                                <td class="projects-table-data projects-table-project"><a href="">Chains & Shackles</a></td>
+                                <td class="projects-table-data projects-table-client"><a href = "">Chains & Shackles</a></td>
+                                <td class="projects-table-data projects-table-location"><a href ="">Singapore</a></td> 
+                            </tr>
+                            <tr class="projects-table-row">
+                                <td class="projects-table-data projects-table-year"><a href="">2020</a></td>
+                                <td class="projects-table-data projects-table-project"><a href="">Chef Records Media Kit</a></td>
+                                <td class="projects-table-data projects-table-client"><a href = "">Chef Records</a></td>
+                                <td class="projects-table-data projects-table-location"><a href ="">Singapore</a></td> 
+                            </tr>
+                            <!--
+                            <tr class="projects-table-row">
+                                <td class="projects-table-data projects-table-year"><a href="">2020</a></td>
+                                <td class="projects-table-data projects-table-project"><a href="">Chef Records Media Kit</a></td>
+                                <td class="projects-table-data projects-table-client"><a href = "">Chef Records</a></td>
+                                <td class="projects-table-data projects-table-location"><a href ="">Singapore</a></td> 
+                            </tr>
+                            -->
+                        </tbody>
+                    </table> 
+                </section>  
+            <!--project preview(right)-->
+                <section class="project-images">
+                    <div class="project-images-wrapper">
+                        
+                    </div>
+                </section>         
             </div>
         </div>
     </body>
