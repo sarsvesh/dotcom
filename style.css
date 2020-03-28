@@ -137,10 +137,20 @@ input:focus{
 }
 */
 /* -----------projects page (project list)-------------- */
-.list{
+#app{
+  display: block;
+}
+#list{
   overflow: hidden;
   display: flex;
   flex-direction: row;
+  display: -webkit-box;
+}
+section{
+  display: flex;
+  display: -webkit-box;
+  flex-direction: row;
+  width: 50%;
 }
 .projects-table{
   color: black;
@@ -211,6 +221,27 @@ td {
   text-overflow: ellipsis;
   padding-top: .5rem;
   padding-bottom: .5rem;
+}
+
+.projects-images {
+  display: block;
+  padding: 0 1rem 1rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.project-images-wrapper{
+  overflow: hidden;
+  margin: -6px;
+}
+.projects-image {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+  padding: .5rem;
+}
+.projects-image img{
+  width: 400px;
+  height: 300px;
 }
 /* MOBILE SCALING */
 @media screen and (min-width:375px) and (max-width:600px){
