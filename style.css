@@ -1,3 +1,34 @@
+@font-face {
+  font-family: 'neue_machinaultrabold';
+  src: url('fonts/NeueMachina-Ultrabold.otf');
+  font-weight: 300 bold;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'neue_machinaregular';
+  src: url('fonts/NeueMachina-Regular.otf');
+  font-weight: 200 normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'neue_machinalight';
+  src: url('/fonts/NeueMachina-Light.otf');
+  font-weight: 100 lighter;
+  font-style: normal;
+
+}
+
+
 @import url('https://fonts.googleapis.com/css2?family=Cousine&display=swap');
 *{
   margin: 0;
@@ -6,7 +37,7 @@
   text-decoration: none;
 }
 html{
-  font-family: Helvetica, sans-serif;
+  font-family: 'neue_machinaregular' ,sans-serif;
   background-color: black;
 }
 /* ---------HOMEPAGE------------ */
@@ -47,12 +78,14 @@ ul a:hover{
 .row{
   padding-left: 10px;
   padding-right: 10px;
+  padding-top: 10px;
   display: flex;
   width: 100%;
 }
 .main-text{
   background-color:white;
   font-size: 30px;
+  font-weight: bold;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 5px;
@@ -60,13 +93,14 @@ ul a:hover{
   justify-content: flex-start;
   width: 65%;
   color: black;
+  line-height: 1.2em;
 }
 .side-text{
   color: white;
   justify-content: flex-end;
   font-size: 15px;
   margin-left: 20px;
-  font-weight: bold;
+  font-family: Helvetica, serif;
 }
 .side-text a{
   color: white;
@@ -156,7 +190,7 @@ input:focus{
   width: 50%;
 }
 .projects-table{
-  color: black;
+  color: white;
   display: block;
   overflow-y: scroll;
   padding-left: 12px;
@@ -169,6 +203,7 @@ table{
   border-spacing: 0;
   display: table;
   border-color: gray;
+
 }
 .projects-table__table {
   width: 100%;
@@ -193,6 +228,7 @@ tr{
   font-weight: 700;
   padding-bottom: .5rem;
   cursor: pointer;
+  font-size: 13px;
 }
 tbody {
   display: table-row-group;
@@ -201,6 +237,11 @@ tbody {
 td {
   display: table-cell;
   vertical-align: inherit;
+  font-family: 'neue_machinaultrabold';
+}
+td a{
+  color: white;
+  font-family:'neue_machinaregular' ;
 }
 .projects-table-row {
   width: 100%;
@@ -222,8 +263,8 @@ td {
 .projects-table-data {
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
-  padding-top: .5rem;
-  padding-bottom: .5rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
 }
 
 .projects-images {
