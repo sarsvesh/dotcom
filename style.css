@@ -291,10 +291,11 @@ a:hover{
 #projects-images {
   display: block;
   width: 826px;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100%;
   padding: 1em;
   padding-top: 0em;
-  height: 971px;
 }
 .projects-images-wrapper{
   overflow: hidden;
