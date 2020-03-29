@@ -37,8 +37,10 @@
   text-decoration: none;
 }
 html{
-  font-family: 'neue_machinaregular' ,sans-serif;
+  font-family: 'helvetica' ,sans-serif;
   background-color: black;
+  overflow-y: hidden;
+  height: 100%;
 }
 /* ---------HOMEPAGE------------ */
 
@@ -60,6 +62,7 @@ ul a:hover{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  font-family: 'neue_machinaregular'
 }
 .site-header-list li{
   padding: 14px 16px;
@@ -113,6 +116,7 @@ ul a:hover{
   display: block;
   position: relative;
   padding: 6px;
+  font-family: 'neue_machinaregular';
 }
 .projects-control-header{
   display: flex;
@@ -141,14 +145,14 @@ ul a:hover{
   padding-right: 0.5em;
   padding-bottom: 0.5em;
   padding-left: 0.5em;
-  font-family: 'Cousine', Arial, Helvetica, sans-serif;
+  font-family: 'neue_machinalight', Arial, Helvetica, sans-serif;
   font-size: 17px;
 }
 input:focus{
   outline: 0;
 }
 .tag{
-    padding: 7px;
+    padding: 9px;
     flex-shrink: 0;
     display: inline-block;
     background: #fff;
@@ -176,28 +180,37 @@ input:focus{
 /* -----------projects page (project list)-------------- */
 #app{
   display: block;
+
 }
 #list{
-  overflow: hidden;
   display: flex;
   flex-direction: row;
   display: -webkit-box;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 7rem);
+  
 }
 #list section{
   display: flex;
   display: -webkit-box;
   flex-direction: row;
-  width: 50%;
 }
-.projects-table{
+
+#projects-table{
   color: white;
   display: block;
-  overflow-y: scroll;
+  height: 100%;
   padding-left: 12px;
-  padding-bottom: 12px;
-  padding-right: 6px;
+  padding-bottom: 24px;
+  padding-right: 24px;
   padding-top: 0px;
+  width: 45%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
 }
+
 table{
   border-collapse: collapse;
   border-spacing: 0;
@@ -225,7 +238,7 @@ tr{
   overflow: hidden;
 }
 .projects-table__header {
-  font-weight: 700;
+  font-weight: bold;
   padding-bottom: .5rem;
   cursor: pointer;
   font-size: 13px;
@@ -237,11 +250,16 @@ tbody {
 td {
   display: table-cell;
   vertical-align: inherit;
-  font-family: 'neue_machinaultrabold';
+  font-size: 17px;
 }
 td a{
   color: white;
-  font-family:'neue_machinaregular' ;
+  font-family: Helvetica, sans-serif ;
+  font-weight: lighter;
+}
+a:hover{
+  color: rgb(0, 81, 255);
+  transition: 0.2s ease;
 }
 .projects-table-row {
   width: 100%;
@@ -267,25 +285,28 @@ td a{
   padding-bottom: 0.7rem;
 }
 
-.projects-images {
+#projects-images {
   display: block;
-  padding: 0 1rem 1rem;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  width: 826px;
+  overflow: scroll;
+  padding: 1em;
+  padding-top: 0em;
+  height: 971px;
 }
-.project-images-wrapper{
+.projects-images-wrapper{
   overflow: hidden;
-  margin: -6px;
+  width: 840px;
 }
-.projects-image {
+#projects-image {
   cursor: pointer;
   display: inline-block;
   vertical-align: top;
-  padding: .5rem;
 }
 .projects-image img{
   width: 400px;
   height: 300px;
+  padding: 0.5em;
+
 }
 /* MOBILE SCALING */
 @media screen and (min-width:375px) and (max-width:600px){
