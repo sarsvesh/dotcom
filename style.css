@@ -189,14 +189,17 @@ input:focus{
   align-items: center;
   justify-content: center;
   height: calc(100vh - 7rem);
-  
+  display: flex;
+  display: -webkit-box;
+  flex-direction: row;
 }
+/*
 #list section{
   display: flex;
   display: -webkit-box;
   flex-direction: row;
 }
-
+*/
 #projects-table{
   color: white;
   display: block;
@@ -311,11 +314,13 @@ a:hover{
 /* MOBILE SCALING */
 @media screen and (min-width:375px) and (max-width:600px){
   /* for screens that are at least 375 pixels wide */
-
+  #app{
+    width: 100%;
+  }
   .site-header{
     display: block;
     width: 100%;
-    height: 55px;
+    height: 40px;
     padding-bottom: 5px;
     margin: none;
   }
@@ -348,4 +353,44 @@ a:hover{
     font-size: 15px;
     margin-left: 5px;
   }
+ .site-header-2{
+    display: block;
+    width: 100%;
+  }
+  .projects-control{
+    display: block;
+  }
+  .projects-control-input{
+    display: none;
+  }
+  #list{
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 7rem);
+  }
+  #projects-table{
+    display: none;
+  }
+  #projects-images{
+    padding: 0%;
+    overflow-x: hidden;
+    width: 100%;
+  }
+  .projects-images-wrapper{
+    overflow-x: hidden;
+    width: 100vh;
+    overflow-y: scroll;
+
+  }
+  .projects-image{
+    max-width: 100%;
+    height: auto;
+    display: flex;
+  }
+  .projects-image img{
+    width: 350px;
+    height: auto;
+    padding: 15px;
+  }
 }
+ 
